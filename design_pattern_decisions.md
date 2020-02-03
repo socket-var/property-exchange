@@ -1,0 +1,5 @@
+- Modifiers have been extensively used throughout the contract. Since different types of users like escrow, buyer and seller exist in the property-exchange application, it is important to provide robust access control logic using modifiers and reusable functions used in require() calls.
+- Check-Effects-Interaction pattern has been widely used, every function is started off with a clearly defined set of modifiers and require() statements followed by updating the state and end with external interactions like calling transfer().
+- The contracts heavily use mappings and structs and avoid arrays to provide deterministic lookup time and avoid infinite gas estimates.
+- The contract heavily uses events indexed by a key parameter since event logs have lower gas requirements.
+- Circuit breaker pattern using Pausable contract by openzeppelin is used so that the contract execution can be paused during an emergency / upgrade / attack.

@@ -1,0 +1,6 @@
+.appSnackbar {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  min-width: 25%;
+}
