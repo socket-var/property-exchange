@@ -47,19 +47,25 @@ $ cd server
 $ npm install
 ```
 
-Note that this application needs the latest version of Node.js and PostgreSQL binaries for storing and retrieving historic data obtained from the application interacting with the blockchain.
+- Note that this application needs the latest version of Node.js and PostgreSQL binaries for storing and retrieving historic data obtained from the application interacting with the blockchain.
+- I recommend watching the video completely if you do not want to install and configure postgreSQL which is not straightforward.
+- For running truffle tests, go to the solidity tests section for setup instructions.
 
 ### Local blockchain using Ganache:
 
 ```bash
 $ cd px-bootcamp
 $ npm install
+$ cd ..
 $ truffle migrate --reset
 ```
 
 ### Solidity tests:
 
 - 12 tests written in JavaScript that start off testing various functions from register() to transferProperty() and end with tests like checking if excess amount is refunded and other edge cases.
+- Before running tests, change the "from" address in "2_deploy_contracts.js" to your account of choice.
+- Make sure the port on which ganache is running is correct in truffle-config.js, if you are using ganche GUI it should run on 7545.
+- If you want to test with rinkeby, make sure you have .mneumonic and .infura-secret files in the project root directory.
 
 ```bash
 $ truffle test
