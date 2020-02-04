@@ -36,29 +36,14 @@
 
 ## Installation instructions:
 
-### The application:
+### Local blockchain using Ganache:
 
-```bash
-
-$ git clone https://github.com/socket-var/px-bootcamp.git
-$ cd client
-$ npm install
-$ cd server
-$ npm install
-```
-
-- Note that this application needs the latest version of Node.js and PostgreSQL binaries for storing and retrieving historic data obtained from the application interacting with the blockchain.
-- I recommend watching the video completely if you do not want to install and configure postgreSQL which is not straightforward.
 - Change the "from" address in "2_deploy_contracts.js" to your account of choice before running truffle migrate.
 - Make sure the port on which ganache is running is correct in truffle-config.js, if you are using ganche GUI it should run on 7545.
-- If you want to test with rinkeby, make sure you have .mneumonic and .infura-secret files in the project root directory.
-
-### Local blockchain using Ganache:
 
 ```bash
 $ cd px-bootcamp
 $ npm install
-$ cd ..
 $ truffle migrate --reset
 ```
 
@@ -71,6 +56,20 @@ $ truffle migrate --reset
 
 ```bash
 $ truffle test
+```
+
+### The application:
+
+- Note that this application needs the latest version of Node.js and PostgreSQL binaries for storing and retrieving historic data obtained from the application interacting with the blockchain.
+- I recommend watching the video completely if you do not want to install and configure postgreSQL which is not straightforward.
+
+```bash
+
+$ git clone https://github.com/socket-var/px-bootcamp.git
+$ cd client
+$ npm install
+$ cd server
+$ npm install
 ```
 
 ### Running the app:
