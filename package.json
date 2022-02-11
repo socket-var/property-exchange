@@ -4,7 +4,7 @@
   "main": "truffle-config.js",
   "license": "ISC",
   "dependencies": {
-    "@openzeppelin/contracts": "^2.4.0",
+    "@openzeppelin/contracts": "^4.4.2",
     "dotenv": "^8.2.0",
     "path": "^0.12.7",
     "truffle-hdwallet-provider": "^1.0.17"
